@@ -1,0 +1,37 @@
+Today in this PPT, I'm going to introduce a small web application that is Shopping Cart With Checkout System Using PHP, MySQL & Ajax,  In this application, I'll show you how to display all the products from the database on the home page and I'll show you how to add a product into the cart and then I'll also show you how to checkout with cart products.
+So, in this application, I'm using Bootstrap 4 for designing all the pages and I'm using PHP as a back-end language, I'm using MySQL Prepared Statement for database operation like inserting, fetching, deleting items, I'm using jQuery - Ajax to send the HTTP request to the server and I'm also using Fontawesome library for icons.
+
+Here is my catalogue, each part can be corresponded to the working steps.
+
+
+Apache and MySQL are essential for running a web application:
+Apache (Web Server): Handles requests from users and delivers website content to their browsers. It processes HTML, CSS, and other files to display web pages.
+MySQL (Database System): Stores, manages, and retrieves data for the website, such as user accounts, products, and orders.
+
+
+Cart: Stores items added to customers’ shopping carts before they place an order.
+Orders: Keeps track of customer purchases, including order details and statuses.
+Products: Contains information about available items, such as descriptions, prices, and stock levels.
+
+In this step, I create a new home page index.php file inside the root of the project directory. In this file, I design a navbar on the top and then I fetch all the products from the database and display them on this page with some product details and  add an Add to Cart button. Which means that you click the “Add to Card” buttom, the product can be added into you shopping card.
+ I've used bootstrap 4 CDN links, font awesome CDN link and in the below, I've also included jQuery CDN link and Bootstrap 4 JS CDN link. 
+I've also sent some request to the server using jQuery - Ajax. Once you open this page in the browser then you'll see something like the below image.
+
+Before going further 1st, I create a new action.php file in the root of the project directory. In this file, I write all the actions like add item to the cart, and if you have been this kind of product inside your shopping card then it will warning you item already added to you card! An d the you can remove items from the cart, I will show you in the next page. 
+And then l design the cart page and display all the items present in the cart table. So, for this just create a new file cart.php in the root of the project directory.
+In this file also you can see I've designed the same navbar that was on the home page and then I've fetched all the products from the cart table and displayed them in the tabular format. and then you can also see the products which added into the shopping card will be shown successfully inside the cart database. Once you open this page then you can see the output like the below image.
+
+
+If you want to delete or add the quantity of the products, yes you can do that way, and you can see the total price change in a correct way. And when you want to delete the product, it will arlet you wheather you want to delete or not. If so, it will delete successfully. Vice versa
+
+And a thing I need to mention is that the quantity of the product should be bigger or equal then 1, which means if you want the change the quantity into zero, delete the product just fine.
+
+In this step, I design the checkout page. So, for this just create a new file checkout.php in the root of the project directory. In this page, I design a form, and I also display some added products information with the total price. 
+In the above file, you can see I'm fetching some product information and displaying it on this page. You can also see I'm sending an ajax request to the server with form data. Once you open this page then you can see something like the below image.
+Once the customer enters his details in the above form and clicks on the place order then the customer's information will be saved in the orders table. And customer sees something like the below image.
+
+
+Now this project has been finished, I can try to add any item to the cart and then go to checkout fill out the form and place your order. All your data will be saved to the database.
+If you have any issues regarding this project then you can comment down your issues, I'll try to fix them as soon as possible. And If you liked this project then you can share this post with your friends.
+
+
